@@ -1,28 +1,35 @@
-# Team
+# Team Management System - Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.
+## Overview
 
-## Development server
+Team Management System is an Angular application for streamlined team, project, and task management within an organization.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- **Team Management:** Add, edit, and remove team members with profiles displaying roles and project assignments.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Project Tracking:** Monitor ongoing projects, their status, and deadlines. Assign team members and track progress.
 
-## Build
+- **Task Management:** Break projects into tasks, assign them, and monitor task completion for timely project milestones.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+1. **Clone the Repository:**
+```bash
+    git clone https://github.com/your-username/team-management-system-angular.git
+```
+2. nstall Dependencies:
+```bash
+    npm install
+```
+3. Run the Application:
+```bash
+     ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Open http://localhost:4200/ in your browser to access the Team Management System.
 
-## Running end-to-end tests
+## Technology
+  - Angular, TypeScript, HTML/CSS
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# team-management-system

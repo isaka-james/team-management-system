@@ -10,5 +10,29 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'team';
+  memberName: string = '';
+  members: string[] = [];
+  totalMembers: number = 0;
+  errorMsg: string = '';
+
+
+  onChangeInput(formMember: string){
+    this.memberName = formMember;
+    this.errorMsg = '';
+  }
+
+
+  addMember(){
+    if(this.memberName.length<=0){
+      this.errorMsg = 'Fill the name First!';
+      return;
+    }
+    
+    this.members.push(this.memberName);
+    this.totalMembers += 1;
+    this.memberName = '';
+  }
+
+  
+
 }

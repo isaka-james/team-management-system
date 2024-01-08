@@ -1,0 +1,51 @@
+<div class="container">
+
+  
+  <h1 class="teamHeader"> TMS | Team Management System</h1>
+
+  <div class="inputContainer">
+    <h3 class="totalMembers">Total Members: {{ totalMembers }}</h3>
+    <ul class="uL">
+      <li *ngFor="let member of members"> {{ member }}</li>
+    </ul>
+
+
+        <ul *ngFor="let group of groupedList; let i=index">
+          <h1> Team {{i+1}}</h1>
+          <li *ngFor="let individual of group"> {{ individual}}</li>
+        </ul>
+
+  </div>
+
+  <div class="actions">
+    <input 
+      #memberNameInput
+      type="text"
+      class="memberName"
+      maxlength="50"
+      (input)="onChangeInput(memberNameInput.value)" 
+      placeholder="Name" />
+
+    <button 
+        class="addButton"
+        (click)="addMember()">Add Member</button>
+  </div>
+
+
+  <input 
+    #numberTeamsForm
+    type="number"
+    class="memberName"
+    maxlength="50"
+    (input)="onChangeTeams(numberTeamsForm.value)" 
+    placeholder="No of Team Members" />
+    <button 
+    class="showButton"
+    (click)="showTeams()">Generate Teams</button>
+
+  <div style="height: 30px;">
+      <div class="error" *ngIf="errorMsg">{{ errorMsg }}</div>
+  </div>
+
+  
+</div>

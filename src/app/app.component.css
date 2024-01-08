@@ -1,0 +1,138 @@
+.error{
+    background-color: #b93434;
+    color: white;
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: small;
+    opacity: 50%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 175px;
+    
+}
+
+.showButton{
+    padding: 6px 15px;
+    margin-top: 10px;
+}
+
+/* Styles for the smart phones */
+@media only screen and (max-width: 767px) {
+
+    .container {
+        background-color: white;
+        position: absolute;
+        margin-top: 17%;
+        margin-left: 10%;
+        margin-right: 10%;
+        border: 2px solid #3c3131;
+        padding: 20px; /* Adjust the padding value as per your preference */
+        
+      }
+    .totalMembers{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .teamHeader{
+        font-size: 22px;
+    }
+    
+    .inputContainer{
+        border: 15px  solid #3c3131; 
+        padding: 10px;
+        height: 250px;
+        overflow-y: auto;
+    }
+    
+    .uL{
+        list-style-type: decimal;
+        font-style: italic;
+    }
+    
+    .memberName{
+        transition: transform 0.3s ease-in-out;
+    
+        outline: none;
+    }
+    .memberName:hover{
+        border: 2px solid black; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+      
+        transform: scale(1.1);
+        font-weight: 500;
+    }
+    .memberName:focus {
+        border: 2px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    
+    .actions{
+        margin-top: 20px;
+    }
+    
+    .addButton{
+        padding: 6px 10px;
+        margin-left: 20px;
+    }
+    
+
+}
+
+
+
+/* Style for the tables and desktops */
+@media only screen and (min-width: 768px) {
+
+    .container {
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid #3c3131;
+        padding: 20px; /* Adjust the padding value as per your preference */
+      }
+    
+    .teamHeader{
+        font-size: 22px;
+    }
+    
+    .inputContainer{
+        border: 20px  solid #3c3131; 
+        padding: 10px;
+        height: 250px;
+        overflow-y: auto;
+    }
+    
+    .uL{
+        list-style-type: decimal;
+        font-style: italic;
+    }
+    
+    .memberName{
+        transition: transform 0.3s ease-in-out;
+    
+        outline: none;
+    }
+    .memberName:hover{
+        border: 2px solid black; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+      
+        transform: scale(1.1);
+        font-weight: 500;
+    }
+    .memberName:focus {
+        border: 2px solid black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    
+    .actions{
+        margin-top: 20px;
+    }
+    
+    .addButton{
+        padding: 6px 10px;
+        margin-left: 20px;
+    }
+
+}
